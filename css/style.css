@@ -1,0 +1,82 @@
+
+.paralleximage1,.paralleximage2,.paralleximage3{
+    opacity: 0.70;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.paralleximage1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.507)),url('../images/action-architecture-billboard-1486222.jpg');
+    width: 100%;
+   
+    height: 90vh;  
+
+}
+.paralleximage2{
+    background-image: url('../images/architectural-design-architecture-building-1738986.jpg');
+    height: 500px;;
+}
+.paralleximage3{
+    background-image: url('../images/architecture-buildings-city-169647.jpg');
+    height: 500px;
+    
+}
+.parraleximagetext1{
+    width: 50%;
+    position: relative;
+    height: 50%;
+    top: 45%;
+    left: 24%;
+}
+.text1{
+    width: 15em;
+    height:2em;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 15px;
+
+    color: white;
+    font-size: 40px;
+    display:block;
+     background-color: rgba(0, 0, 0, 0.616);
+
+}
+
+section{
+    text-align: center;
+    padding:80px;
+}
+
+.section-ligth{
+background-color: #5c5959bb;
+color: #f1f1f1;
+
+
+
+}
+.section-dark{
+    background-color: #282e34;
+    color: #dddddd;
+}
+
+@media(max-width:768px){
+ .parraleximagetext1{
+    width: 200px;
+    height: 200px;
+    top: 40%;
+  
+ }
+ 
+ .text1{
+ 
+    text-align: center;
+  font-size: 15px;
+}
+.paralleximage1{
+    opacity: 0.4;
+    
+}
+}
+

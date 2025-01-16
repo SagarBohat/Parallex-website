@@ -1,0 +1,136 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family:"Lato" serif;
+}
+nav{
+display: flex;
+ justify-content: space-around;
+ align-items: center;   
+ min-height: 10vh;
+ background-color: blueviolet;
+}
+span{
+    font-size: 15px;
+}
+.logo{
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.menu{
+    display: flex;
+    width: 60%;
+    
+    justify-content: space-around;
+    
+}
+.list-items{
+    list-style: none;
+}
+.menu a{
+    color: white;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-weight: bolder;
+   font-size: 10px;   
+}
+.burger div{
+    display: none;
+    width: 25px;
+    height: 2px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+@media screen and (max-width:1220px){
+.menu{
+    width: 70%;
+
+}
+}
+@media screen and (max-width:1024px){
+    .menu{
+        width: 70%;
+    
+    }
+}
+@media screen and (max-width:930px){
+.menu {
+position: absolute;
+right: 0px;
+height: 90vh;
+top: 8vh;
+background-color:transparent;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 50%;
+transform : translateX(100%);
+transition: transform 0.1s ease-in;
+}
+.menu-items{
+    color: blueviolet;
+    font-weight: bolder;
+    display: block;
+    padding: 10px;
+   background-color:transparent;
+
+}
+body{
+    overflow-x: hidden;
+}
+.burger div{
+    transition:all 0.3s  ease ;
+    display: block;
+    cursor: pointer;
+}
+}
+.menu.isactive{
+    transform: translateX(0%);
+}
+@keyframes menuFade{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+ .burger.toogel .line1{
+ transform: rotate(-45deg) translate(-5px,6px);
+ }
+
+ .burger.toogel .line2{
+     opacity: 0;
+
+ }
+
+ .burger.toogel  .line3{
+
+    transform: rotate(45deg) translate(-5px,-6px);
+ }
+
+@media(max-width:864px){
+    .menu{
+        top: 11.8vh;
+    }
+}
+
+ @media(max-width:414px){
+     .menu{
+         top: 8.2vh;
+         height: 90vh;
+     }
+    
+}
+@media(max-width:320px){
+    .menu{
+        top: 16vh;
+        height: 90vh;
+    }
+   
+}
